@@ -1,0 +1,63 @@
+pehle backend kholo or run kro
+http://localhost:4000
+cd backend
+npm run server
+
+
+
+fir admin run karo or kholo
+http://localhost:5173
+cd admin
+npm run dev
+
+
+
+fir frontend run kro or kholo
+http://localhost:5174
+cd frontend
+npm run dev
+
+// backend ke code me frontend ke page ka url me port number 5174 diya hua hai...isiliye pehle admin kholo
+
+
+
+file-structure
+
+FOOD-DEL
+|->admin->src->components->Navbar -> Navbar.jsx and Navbar.css
+|            |           |->Sidebar -> Sidebar.jsx and Sidebar.jsx
+|            |
+|            |->pages->Add -> Add.jsx and Add.css
+|            |       |->List -> List.jsx and List.css
+|            |       |->Orders -> Orders.jsx and Orders.css
+|            |
+|            |-> App.jsx , index.css , main.jsx
+|
+|->backend->config -> db.js
+|         |->controllers -> cartController.js , foodController.js , orderController.js , userController.js
+|         |->middleware -> auth.js
+|         |->models -> foodModel.js , orderModel.js , userModel.js
+|         |->routes -> cartRoute.js , foodRoute.js , orderRoute.js , userRoute.js
+|         |->uploads 
+|         |->server.js
+|
+|->frontend->src->components->AppDownload -> AppDownload.jsx and AppDownload.css
+                |           |->ExploreMenu -> ExploreMenu.jsx and ExploreMenu.css
+                |           |->FoodDisplay -> FoodDisplay.jsx and FoodDisplay.css
+                |           |->FoodItem -> FoodItem.jsx and FoodItem.css
+                |           |->Footer -> Footer.jsx and Footer.css
+                |           |->Header -> Header.jsx and Header.css
+                |           |->LoginPopup -> LoginPopup.jsx and LoginPopup.css
+                |           |->Navbar -> Navbar.jsx and Navbar.css
+                |
+                |->context -> StoreContext.jsx
+                |
+                |->pages->Cart -> Cart.jsx and Cart.css
+                |       |->Home -> Home.jsx and Home.css
+                |       |->MyOrders -> MyOrders.jsx and MyOrders.css
+                |       |->PlaceOrder -> PlaceOrder.jsx and PlaceOrder.css
+                |       |->Verify -> Verify.jsx and Verify.css
+                |
+                |->App.jsx
+                |->App.css
+                |->main.jsx
